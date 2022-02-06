@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  background-image:url(../src/images/corona.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+}
+h3,h2{
+  color:white;
+  font-weight:bold;
+
+}
+/* section{
+  background-color:black;
+  box-shadow:5px 5px 15px -5px rgba(0,0,0,0.8);
+  width:80vw;
+  height:80vh;
+} */
+.main{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.cardno{
+  font-size:28px;
+  font-weight:bold;
+  box-shadow:5px 5px 25px -5px rgba(0,0,0,0.8);
+  text-shadow: 2px 1px 2px #6afd6a;
+}
+.cardname{
+  font-size:13px;
+  font-weight:bold;
+}
+.title{
+   font-size:23px;
+    font-weight:bold;
+    font-style:italic;
+    text-shadow: 2px 1px 2px black;
+}
+.loader{
+  position:relative;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background: linear-gradient(45deg,transparent,transparent 40%,rgb(10,216,120));
+  animation:animate 2s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform :rotate(0deg);
+    filter:hue-rotate(0deg);
+  }
+  100% {
+    transform :rotate(360deg);
+    filter:hue-rotate(360deg);
+  }
+}
+.loader:before{
+  content:'';
+  position:absolute;
+  top:6px;
+  left: 6px;
+  right:6px;
+  bottom: 6px;
+  background:rgb(2, 33, 99);
+  border-radius:50%;
+  z-index:1000;
+
+}
+.loader:after{
+  content:'';
+  position:absolute;
+  top:0px;
+  left: 0px;
+  right:0px;
+  bottom: 0px;
+  background: linear-gradient(45deg,transparent,transparent 40%,rgb(10, 216, 120));
+  border-radius:50%;
+  z-index:1000;
+  z-index:1;
+  filter:blur(30px);
+}
+.large{
+  animation: enlarge 2s linear infinite;
+}
+@keyframes enlarge {
+  0% {
+    transform :scale(0.75,0.75);
+  }
+  50%{
+    transform:scale(1.25,1.25);
+  }
+  100% {
+    transform :scale(0.75,0.75);
+  }
+}
+.card{
+  box-shadow: 5px 5x 25px -8px rgba(0,0,0,0.8);
+}
+.bgclass{
+  background-color: rgb(2, 33, 99) !important;
+}
+/* .cardstart{
+  border-radius: 10%;
+} */
+#a{
+  background-color:rgb(33, 210, 250);
+}
+#b{
+  background-color:rgb(253, 202, 35);
+}
+#c{
+  background-color:rgb(14, 197, 29);
+}
+#d{
+  background-color:rgb(255, 0, 140);
+}
+#e{
+  background-color:rgb(255, 50, 50);
+}
+#f{
+  background-color:rgb(0, 255, 179);
+}
+#g{
+  background-color:rgb(180, 241, 10);
+}
+#h{
+  background-color:rgb(204, 0, 255);
+}
+#i{
+  background-color:rgb(250, 157, 17);
+}
+#j{
+  background-color:rgb(109, 125, 247);
+}
+#k{
+  background-color: rgba(255, 255, 255, 0.96);
+}
+#l{
+ background-color:rgb(247, 136, 136);
+}
+#m{
+  background-color:rgb(38, 204, 182); 
+}
+#n{
+  background-color:rgb(160, 159, 159);
+}
+#o{
+  background-color:rgb(238, 115, 115);
+}
+#p{
+  background-color:rgb(4, 176, 199);
+}
+#q{
+  background-color:rgb(157, 67, 247);
+}
+#r{
+  background-color:rgb(119, 250, 86);
+}
+#s{
+  background-color:rgb(230, 250, 50);
+}
+#t{
+  background-color:rgb(252, 116, 252);
+}
+#u{
+  background-color:rgb(243, 99, 101);
+}
+#v{
+  background-color:rgb(89, 248, 253);
+}
+#w{
+  background-color:rgb(160, 159, 159);
+}
+#x{
+  background-color:rgb(164, 189, 3);
+}
+#y{
+  background-color:rgb(178, 100, 241);
+}
+#z{
+  background-color:rgb(124, 185, 252);
+}
+#statedata{
+  background-color:rgb(253, 210, 153);
+  text-align: center;
+  /* padding-top:2px;
+  padding-bottom:-2px;
+  margin-top:1px; */
+  height:85%;
+}
+@media (max-width: 785px) {
+  .title{
+    font-size:17px;
+     font-weight:bold;
+     font-style:italic;
+     text-shadow: 2px 1px 2px black;
+ }
+}
+@media (max-width:768px) {
+  .loader{
+    width: 70px;
+    height:70px;
+  }
+}
+@media (max-width:768px) {
+  .loader{
+    width: 60px;
+    height:60px;
+  }
+}
+.card{
+  border-radius: 9px;
+}
+
+@media (max-width:572px) {
+  .emoji{
+    display: none;
+  }
+}
+@media (max-width:487px) {
+  .emoji2{
+    display: none;
+  }
+}
+
+.largecard{
+  animation: enlarge2 2s linear infinite;
+}
+@keyframes enlarge2 {
+  0% {
+    transform :scale(0.75,0.75);
+  }
+  50%{
+    transform:scale(1,1);
+  }
+  100% {
+    transform :scale(0.75,0.75);
+  }
+}
+.card:hover{
+  border-radius:30px;
+  border: 5px solid rgb(245, 224, 102);
+}
+#a:hover,#b:hover,#c:hover,#d:hover,#e:hover,#f:hover,#g:hover,#h:hover,#i:hover,#j:hover,#k:hover,#l:hover,#m:hover,#n:hover,#o:hover,#p:hover,#q:hover,#r:hover,#s:hover,#t:hover,#u:hover,#v:hover,#w:hover,#x:hover,#y:hover,#z:hover{
+  background-image: url(../src/images/corona3.jpg) ;
+}
+.cardno:hover{
+  border:2px solid black;
+  text-shadow: 2px 2px 2px #6afd6a;
+  border-radius: 10px;
+}
